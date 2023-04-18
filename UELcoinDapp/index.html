@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UELcoin Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>UELcoin Web App</h1>
+    <button id="connect">Connect Wallet</button>
+    <h2>Your Balance</h2>
+    <p id="balance"></p>
+    <h2>Claim UELcoin</h2>
+    <button id="claim">Claim</button>
+    <h2>Transfer UELcoin</h2>
+    <form id="transferForm">
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient" name="recipient" required>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" min="1" step="any" required>
+        <button type="submit">Transfer</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
